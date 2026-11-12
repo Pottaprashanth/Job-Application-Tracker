@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8822/api/applications";
+const API_URL = "https://job-application-tracker-pk9h.onrender.com/api/applications";
 
 export const getAllApplications = () => {
     return axios.get(`${API_URL}/getall`);
