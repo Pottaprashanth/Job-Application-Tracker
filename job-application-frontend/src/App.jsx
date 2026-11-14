@@ -5,7 +5,7 @@ import {
     addApplication,
     updateApplication,
     deleteApplication
-} from "./services/applicationService";
+} from "./service/applicationService";
 
 import "./App.css";
 
