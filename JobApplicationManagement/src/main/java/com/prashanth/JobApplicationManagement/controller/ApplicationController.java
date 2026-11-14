@@ -17,10 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.prashanth.JobApplicationManagement.model.Applications;
 import com.prashanth.JobApplicationManagement.service.ApplicationService;
-@CrossOrigin(origins = {
-    "http://localhost:5173",
-    "https://job-application-frontend-bqdi.onrender.com"
-})
+
 @RestController
 @RequestMapping("/api/applications")
 public class ApplicationController {
