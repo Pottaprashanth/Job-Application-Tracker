@@ -1,6 +1,7 @@
+
 import axios from "axios";
 
-const API_URL = "http://localhost:8822/api/applications";
+const API_URL = "https://job-application-tracker-pk9h.onrender.com/api/applications";
 
 // GET all applications
 export const getAllApplications = () => {
@@ -35,27 +36,20 @@ export const getApplicationsByStatus = (status) => {
 // SEARCH by company
 export const getApplicationsByCompany = (name) => {
     return axios.get(`${API_URL}/company`, {
-        params: {
-            name: name
-        }
+        params: { name }
     });
 };
 
 // SEARCH by job role
 export const getApplicationsByJobRole = (role) => {
     return axios.get(`${API_URL}/jobrole`, {
-        params: {
-            role: role
-        }
+        params: { role }
     });
 };
 
 // GET by date range
 export const getApplicationsByDateRange = (startDate, endDate) => {
     return axios.get(`${API_URL}/date-range`, {
-        params: {
-            startDate: startDate,
-            endDate: endDate
-        }
+        params: { startDate, endDate }
     });
 };
